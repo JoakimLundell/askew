@@ -1,0 +1,170 @@
+body, html {
+  height: 100%;
+  background-color: #3f2860;
+}
+
+.row {
+  height: 25%;
+}
+.column {
+  height: 100%;
+}
+
+.active-column {
+  color: red;
+  width: 100%;
+  z-index: 200;
+  background-color: white;
+}
+.lostfocus-column {
+  color: blue;
+}
+
+li {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+li a {
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  padding: 0;
+  background-color: rgba(0,0,0,0);
+  letter-spacing: 5px;
+  color: rgba(255,255,255,0.5);
+  transition: letter-spacing 6s;
+}
+li a:hover {
+  letter-spacing: 25px;
+  color: rgba(255,255,255,0.8);
+  transition: letter-spacing 2s;
+}
+
+header {
+  height: 100px;
+  line-height: 90px;
+}
+
+section.content {
+  padding: 0 0;
+  min-height: 100%;
+}
+
+footer {
+  position: fixed;
+  background-color: rgba(255,255,255,0.2);
+  color: rgba(0,0,0,0.3);
+  padding: 0 2px 0 2px;
+  right: 0;
+  bottom: 0;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 54px;
+  color: #ef6d3b;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+nav.mainmen_ a {
+  color: darkred;
+  padding-right: 14px;
+}
+
+nav ul {
+  list-style-type:none;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+}
+nav li {
+  float:right;
+}
+nav li a {
+  display: block;
+  padding: 0 10px;
+}
+.circles {
+  /*to be used? */
+}
+
+.circle {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.4);
+  width: 170px;
+	height:170px;
+  margin: 0 10px;
+	overflow: hidden;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 8px rgba(255,255,255,0.6);
+	transition:all 0.5s ease-in-out;
+  opacity: 0;
+}
+.circle.open {
+  left:10px;
+}
+
+.circle-content{
+  background-color: black;
+  line-height: 170px;
+  text-align: center;
+}
+
+/* avatar */
+.avatar {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(220,220,220);
+  border-radius: 50%;
+  left: -100px;
+  transition: all 0.5s ease-in-out;
+  opacity:0;
+  border: 15px solid #8C7EA0;
+}
+
+.avatar.visible {
+  left: 0;
+  opacity: 1.0;
+}
+.avatar:hover {
+  -webkit-transform:scale(1.15); /* Safari and Chrome */
+  -moz-transform:scale(1.15); /* Firefox */
+  -ms-transform:scale(1.15); /* IE 9 */
+  -o-transform:scale(1.15); /* Opera */
+  transform:scale(1.15);
+}
+
+/* float */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+
+/* colors */
+.violet {
+  background-color: #3f2860;
+}
+.lime {
+  background-color: #90c5a9;
+}
+.dark-cyan {
+  background-color: #7a9a95;
+}
+.orange {
+  background-color: #ef6d3b;
+}
+.soft-orange {
+  background-color: #fa8b60
+}
