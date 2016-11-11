@@ -1,18 +1,96 @@
+/* general */
 body, html {
   height: 100%;
   background-color: #00204E;
+  background-color: #345077;
   color: #164374;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+/* header */
 header {
-    height: 10%;
-    border:1px solid white;
+    padding-top: 10%;
 }
-header .logo {
+header h1 {
+    font: 800 5rem/4rem Raleway,sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+header h1 span {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding-bottom: 3px;
+}
+
+header h1 span:first-child {
+    font: 800 3rem/2rem "Raleway",sans-serif;
+}
+
+/*header p {
+    margin-bottom: 3px;
+}*/
+
+header .circle {
+    border-radius: 50%;
+    background-color: #fff;
+    transform: scale(1);
+    transition: all 0.5s ease-in 0s;
+
+}
+
+header img.round {
     background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
+header ul.main-menu {
+    margin-top: 20%;
+    list-style-type: none;
+}
+
+header ul.main-menu li {
+    display: block;
+    padding: 1.5rem 1rem;
+    border: 5px solid rgba(255,255,255,0.1);;
+}
+
+header ul.main-menu li:first-child {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+header ul.main-menu li:last-child {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+
+
+/* section content */
+section.content {
+    height: 50%;
+}
+
+
+/* section bottom */
+section.bottom {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* footer */
 footer {
   position: fixed;
   background-color: rgba(255,255,255,0.2);
@@ -23,18 +101,6 @@ footer {
   line-height: 16px;
   font-size: 16px;
 }
-
-section.content {
-    height: 70%;
-}
-section.bottom {
-    height: 20%;
-    background-color: rgba(255,255,255,0.2);
-
-}
-
-
-
 
 
 /* float */
