@@ -1,9 +1,11 @@
 /* general */
 body, html {
-  height: 100%;
   background-color: #00204E;
-  background-color: #345077;
+  background-color: #345077; /* 52,80,119 */
   color: #164374;
+  height: 100%;
+  background: url('http://www.askew.se/images/start2.jpg') no-repeat center center;
+  color: white;
 }
 
 a {
@@ -13,7 +15,6 @@ a {
 
 /* header */
 header {
-    padding-top: 10%;
 }
 header h1 {
     font: 800 5rem/4rem Raleway,sans-serif;
@@ -33,23 +34,6 @@ header h1 span:first-child {
     font: 800 3rem/2rem "Raleway",sans-serif;
 }
 
-/*header p {
-    margin-bottom: 3px;
-}*/
-
-header .circle {
-    border-radius: 50%;
-    background-color: #fff;
-    transform: scale(1);
-    transition: all 0.5s ease-in 0s;
-
-}
-
-header img.round {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    overflow: hidden;
-}
 
 
 header ul.main-menu {
@@ -103,6 +87,65 @@ footer {
 }
 
 
+/* classes */
+.logo {
+    padding-top: 30%;
+    padding-bottom: 30px;
+}
+.box {
+    margin-top: 30%;
+    font: 800 4rem/3rem "Raleway",sans-serif;
+    color: white;
+    background-color: rgba(52,80,119, 0.25);
+    padding: 8px 16px;
+    border: 4px solid white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 5px 5px 5px #181919;*/
+}
+
+/* id */
+#cover {
+    position: absolute;
+    top: 0;//10px;
+    bottom: 0;//10px;
+    left: 0;//10px;
+    right: 0;//10px;
+    z-index: 2;
+    background-color: rgba(52,80,119,0.6);
+}
+
+div.ball {
+    width:100%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+div.ball::before {
+    content: "";
+    float: left;
+    /* essentially the aspect ratio. 100% means the
+      div will remain 100% as tall as it is wide, or
+      square in other words.  */
+     padding-bottom: 100%;
+
+}
+div.ball:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img.ball {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
 /* float */
 .pull-right {
   float: right;
@@ -111,6 +154,7 @@ footer {
   float: left;
 }
 .center {
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -130,4 +174,21 @@ footer {
 }
 .soft-orange {
   background-color: #fa8b60
+}
+
+/* for testing only*/
+.background1 {
+    background-color: red;
+}
+.background2 {
+    background-color: blue;
+}
+.background3 {
+    background-color: green;
+}
+.background4 {
+    background-color: yellow;
+}
+.background5 {
+    background-color: pink;
 }
