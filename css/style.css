@@ -114,12 +114,21 @@ footer {
     background-color: rgba(52,80,119,0.6);
 }
 
+div.ball-wrapper {
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+    margin: 10px;
+}
+
 div.ball {
     width:100%;
     border-radius: 50%;
     background-color: transparent;
     border: 5px solid white;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: all .1s ease-out;
+    margin: 0 auto;
 }
 
 
@@ -136,6 +145,10 @@ div.ball:after {
     content: "";
     display: table;
     clear: both;
+}
+
+div.ball:hover {
+
 }
 
 img.ball {
