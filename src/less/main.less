@@ -1,0 +1,299 @@
+//Normalize
+@import "normalize.less";
+
+//Vendor CSS
+@import "vendor/skeleton.less";
+//@import "vendor/slick.less";
+
+//Vendor customizations
+//@import "slick.less";
+//@import "autocomplete.less";
+
+//Core CSS
+@import "variables.less";
+/*@import "mixins.less";
+@import "scaffolding.less";
+@import "fonts.less";
+@import "type.less";
+@import "icons.less";
+@import "logos.less";
+@import "buttons.less";
+@import "forms.less";
+@import "tables.less";
+@import "lists.less";
+@import "media.less";
+@import "utils.less";
+@import "shapes.less";
+@import "colors.less";
+@import "flags.less";
+@import "navs.less";*/
+
+//Components
+/*@import "bubble.less";
+@import "sidebar.less";
+@import "teaser.less";
+@import "accordion.less";
+@import "breadcrumb.less";
+@import "image-editor.less";
+@import "cart.less";
+@import "dimensions-popup.less";
+@import "slider.less";
+@import "product-list.less";
+@import "dropdown.less";
+@import "pagination.less";
+@import "styla.less";*/
+
+//Panels
+/*@import "panels/canvas-diy.less";
+@import "panels/canvas-price-calculator.less";
+@import "panels/canvas-unboxing.less";
+@import "panels/canvas.less";
+@import "panels/categories.less";
+@import "panels/environment.less";
+@import "panels/faq.less";
+@import "panels/find-motives.less";
+@import "panels/image-upload.less";
+@import "panels/inspiration.less";
+@import "panels/instruction-video.less";
+@import "panels/photowall.less";
+@import "panels/qualities.less";
+@import "panels/retouch.less";
+@import "panels/unboxing.less";
+@import "panels/use.less";
+@import "panels/wallpaper-diy.less";
+@import "panels/wallpaper-kit.less";
+@import "panels/wallpaper-measure.less";
+@import "panels/wallpaper-price-calculator.less";
+@import "panels/wallpaper-tiles.less";*/
+
+//Pages
+/*@import "pages/startpage.less";
+@import "pages/information.less";
+@import "pages/crew.less";
+@import "pages/contact.less";
+@import "pages/overview.less";
+@import "pages/checkout-step1.less";
+@import "pages/checkout-step2.less";
+@import "pages/checkout-confirm.less";
+@import "pages/designers.less";
+@import "pages/search.less";
+@import "pages/upload.less";
+@import "pages/product.less";
+@import "pages/custom.less";
+@import "pages/do-it-yourself-frame.less";
+@import "pages/retouch.less";
+@import "pages/not-found.less";*/
+
+/* general */
+body, html {
+  background-color: #00204E;
+  background-color: #345077; /* 52,80,119 */
+  color: #164374;
+  height: 100%;
+  background: url('http://www.askew.se/images/start2.jpg') no-repeat center center;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BEM */
+.block {}
+.block__element {}
+.block--modifier {}
+
+
+
+/* header */
+header {
+}
+header h1 {
+    font: 800 5rem/4rem Raleway,sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+header h1 span {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    padding-bottom: 3px;
+}
+
+header h1 span:first-child {
+    font: 800 3rem/2rem "Raleway",sans-serif;
+}
+
+
+
+header ul.main-menu {
+    margin-top: 20%;
+    list-style-type: none;
+}
+
+header ul.main-menu li {
+    display: block;
+    padding: 1.5rem 1rem;
+    border: 5px solid rgba(255,255,255,0.1);;
+}
+
+header ul.main-menu li:first-child {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+header ul.main-menu li:last-child {
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+
+
+/* section content */
+section.content {
+    height: 50%;
+}
+
+
+/* section bottom */
+section.bottom {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* footer */
+footer {
+  position: fixed;
+  background-color: rgba(255,255,255,0.2);
+  color: rgba(0,0,0,0.3);
+  padding: 0 2px 0 2px;
+  right: 0;
+  bottom: 0;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+
+/* classes */
+.logo {
+    padding-top: 30%;
+    padding-bottom: 30px;
+}
+.box {
+    margin-top: 30%;
+    font: 800 4rem/3rem "Raleway",sans-serif;
+    color: white;
+    background-color: rgba(52,80,119, 0.25);
+    padding: 8px 16px;
+    border: 4px solid white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 5px 5px 5px #181919;*/
+}
+
+/* id */
+#cover {
+    position: absolute;
+    top: 0;//10px;
+    bottom: 0;//10px;
+    left: 0;//10px;
+    right: 0;//10px;
+    z-index: 2;
+    background-color: rgba(52,80,119,0.6);
+}
+
+div.ball-wrapper {
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+    margin: 10px;
+}
+
+div.ball {
+    width:100%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: all .1s ease-out;
+    margin: 0 auto;
+}
+
+
+div.ball::before {
+    content: "";
+    float: left;
+    /* essentially the aspect ratio. 100% means the
+      div will remain 100% as tall as it is wide, or
+      square in other words.  */
+     padding-bottom: 100%;
+
+}
+div.ball:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.ball:hover {
+
+}
+
+img.ball {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* float */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* colors */
+.violet {
+  background-color: #3f2860;
+}
+.lime {
+  background-color: #90c5a9;
+}
+.dark-cyan {
+  background-color: #7a9a95;
+}
+.orange {
+  background-color: #ef6d3b;
+}
+.soft-orange {
+  background-color: #fa8b60
+}
+
+/* for testing only*/
+.background1 {
+    background-color: red;
+}
+.background2 {
+    background-color: blue;
+}
+.background3 {
+    background-color: green;
+}
+.background4 {
+    background-color: yellow;
+}
+.background5 {
+    background-color: pink;
+}

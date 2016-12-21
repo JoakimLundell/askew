@@ -1,0 +1,42 @@
+{
+  "name": "askew",
+  "version": "1.0.0",
+  "description": "askew.se",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "composer": "^0.14.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-strip-comments": "^2.4.3",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "less": "^2.7.1",
+    "mkdirp": "^0.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoakimLundell/askew.git"
+  },
+  "author": "Joakim Lundell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoakimLundell/askew/issues"
+  },
+  "homepage": "https://github.com/JoakimLundell/askew#readme"
+}
