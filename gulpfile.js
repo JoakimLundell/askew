@@ -1,4 +1,4 @@
-(function () {
+
     'use strict';
 
     const gulp = require('gulp');
@@ -25,4 +25,3 @@
 
     gulp.task('watch', ['build', 'watcher']);
     gulp.task('default', ['build']);
-});
